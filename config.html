@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>Einstellungen</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">FritzBox</a>
+      <div class="navbar-nav">
+        <a class="nav-link" href="http://fritz.box" tabindex="0">Zurük</a>
+      </div>
+    </nav>
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="fritzPwd">Fritzbox Kennwort</label>
+          <input
+            placeholder="Kennwort"
+            type="password"
+            class="form-control"
+            id="fritzPwd"
+          />
+          <small>Nach Kennwortänderung bitte neu starten.</small>
+        </div>
+        <button type="button" id="save" class="btn btn-primary">
+          Speichern
+        </button>
+      </form>
+    </div>
+    <!-- Bootstrap Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+      window.jQuery = window.$ = require("jquery");
+    </script>
+    <script>
+      require("popper.js");
+    </script>
+    <script>
+      require("bootstrap");
+    </script>
+    <script>
+      require("./config");
+    </script>
+  </body>
+</html>

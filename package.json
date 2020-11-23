@@ -1,0 +1,32 @@
+{
+  "name": "fritz.box.open",
+  "version": "1.0.0",
+  "author": "Ralf Zeiler",
+  "description": "Öffent die Fritzbox Oberfläche",
+  "repository": "electron/simple-samples",
+  "main": "app.js",
+  "scripts": {
+    "dev": "electron app.js",
+    "pack-first": "electron-builder --dir",
+    "build-second": "electron-builder"
+  },
+  "build": {
+    "appId": "fritz.box.app.electron",
+    "productName": "Fritz.Box",
+    "win": {
+      "icon": "assets/fritz_icon.png"
+    }
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^3.0.2",
+    "electron-builder": "^22.9.1"
+  },
+  "copyright": "Copyright © 2020 ${author}",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "electron-store": "^6.0.1",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
